@@ -1,0 +1,7 @@
+{% extends 'index/base.html'%}
+{% block main %}
+<form method='post' action='/profiles/logout/'>
+	{% csrf_token %}
+	<input type='submit' value='Logout'>
+</form>
+{% endblock %}

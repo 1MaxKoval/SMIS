@@ -1,0 +1,7 @@
+{% extends 'index/base.html' %}
+{% block main %}
+<h1>Welcome to SMIS</h1>
+<li>
+	<ul><a href='/profiles/{{request.session.username}}/'>View Profile</a></ul>
+</li>
+{% endblock %}

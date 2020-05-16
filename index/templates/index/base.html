@@ -1,0 +1,17 @@
+<DOCUMENT! html>
+<html>
+	<head>
+		<title>SMIS</title>	
+	</head>
+	<body> 
+		{% if request.session.username == None %}
+			<a href='/profiles/login'>Login</a>
+		{% elif request.session.username != None %}
+			<a>Currently logged in as {{request.session.username}}</a>
+			<a href='/profiles/login'>Logout</a>
+		{% endif %}
+		{% block main %}
+		{% endblock %}
+	</body>
+	
+</html>

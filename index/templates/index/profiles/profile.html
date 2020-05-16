@@ -1,0 +1,57 @@
+{% extends 'index/base.html' %}
+{% block main %}
+<h1>Welcome to the profile page</h1>
+<p>{{name}}</p>
+<p>{{surname}}</p>
+<p>{{address}}</p>
+<p>{{postCode}}</p>
+<p>{{email}}</p>
+<table>
+	<tr>
+		<th>Day</th>
+		<th>Period 1</th>
+		<th>Period 2</th>
+		<th>Period 3</th>
+		<th>Period 4</th>
+		<th>Period 5</th>
+		<th>Period 6</th>
+		<th>Period 7</th>
+		<th>Period 8</th>
+		<th>Period 9</th>
+		<th>Period 10</th>
+	</tr>
+	<tr>
+		<td>Monday</td>
+		{% for period in m_periods %}
+		<td>{{period}}</td>
+		{% endfor %}
+	</tr>
+	<tr>
+		<td>Tuesday</td>
+		{% for period in t_periods %}
+		<td>{{period}}</td>
+		{% endfor %}
+	</tr>
+
+	<tr>
+		<td>Wednesday</td>
+		{% for period in w_periods %}
+		<td>{{period}}</td>
+		{% endfor %}
+	</tr>
+
+	<tr>
+		<td>Thursday</td>
+		{% for period in th_periods %}
+		<td>{{period}}</td>
+		{% endfor %}
+	</tr>
+
+	<tr>
+		<td>Friday</td>
+		{% for period in f_periods %}
+		<td>{{period}}</td>
+		{% endfor %}
+	</tr>
+</table>
+{% endblock %}
