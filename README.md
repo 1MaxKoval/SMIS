@@ -7,6 +7,6 @@ A web-based timetable management system for high school staff.
 * HTML
 * CSS
 
-## Key Implementation Highlights
+## Implementation Highlights
 
 * Implements a secure login system for high school staff
